@@ -1,0 +1,146 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Zain";
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+h1{
+    font-size: 70px;
+}
+
+table{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: none;
+}
+
+.all_content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px;
+    min-height: 100vh;
+    background-color: #292e36;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.content{
+    width: 330px;
+    text-align: center;
+}
+
+.content h3{
+    font-size: 50px;
+}
+
+.content p{
+    font-size: 30px;
+}
+
+.content a{
+    font-size: 25px;
+    color: brown;
+}
+
+.content span{
+    font-size: 25px;
+    color: brown;
+}
+
+.image{
+    width: 400px;
+    border-radius: 10px;
+    margin: 10px;
+    transition: all ease 0.5s;
+}
+
+.image:hover{
+    transform: scale(1.1,1.1);
+}
+
+#searchInput,#country{
+    outline: none;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    height: 40px;
+    font-size: 50px;
+    border-radius: 40px;
+    border: none;
+    background-color: #292e36;
+    color: #fff;
+}
+
+.frist_screen{
+    color: #fff;
+    height: 100vh;
+    background-image: url(image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.frist_screen div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: #292e36b0;
+}
+
+.nothing{
+    display: none;
+    text-align: center;
+    font-size: 50px;
+}
+
+button{
+    margin: 15px;
+    padding: 15px;
+    font-size: 30px;
+    color: #fff;
+    background-color: #292e36;
+}
+
+.up{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-weight: 900;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: solid #fff;
+    display: none;
+    cursor: pointer;
+}
+
+.search_by_country,.search{
+    border: none;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.search_by_country:hover,.search:hover{
+    border: none;
+    width: 150px;
+    border-radius: 10px;
+    transform: scale(1.1,1.1);
+}
+
+.hidden{
+    display: none;
+}
