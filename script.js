@@ -31,7 +31,7 @@ fetch(url)
           <p>${desc}</p>
           <a href="${linkURL}" target="_blank">Location</a>
         </div>
-            <img class = "image" src="${imgURL}" alt="Image" />
+            <img class = "image" src="${imgURL}" alt="Image">
       </div>
       `;
 
@@ -41,10 +41,9 @@ fetch(url)
 
 
 
-
 searchInput.addEventListener("input", function () {
   const filter = this.value.toLowerCase();
-  const items = document.querySelectorAll("table .all_content");
+  const items = document.querySelectorAll("#sheetData .all_content");
 
   items.forEach(function (item) {
     const h3 = item.querySelector("h3");
@@ -52,12 +51,12 @@ searchInput.addEventListener("input", function () {
 
     if (text.includes(filter)) {
       item.style.display = "";
-      document.querySelector("table").style.display = "block";
-      document.querySelector("table").style.display = "none";
+      document.querySelector("#sheetData").style.display = "block";
+      document.querySelector("#sheetData").style.display = "none";
       nothing.style.display = "none";
     } else {
       item.style.display = "none";
-      document.querySelector("table").style.display = "block";
+      document.querySelector("#sheetData").style.display = "block";
       document.querySelector(".nothing").style.display = "block";
     }
   });
